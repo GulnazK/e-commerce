@@ -1,5 +1,5 @@
 import React from 'react';
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import {useSelector,useDispatch} from "react-redux";
 import {addToCart, removeFromCart} from "../redux/actions/shopActions";
 import Rating from "./rating";
@@ -31,6 +31,7 @@ const ProductDetails = () => {
                   <button className="addToCart" onClick={() => dispatch(addToCart(product.id))}>+</button>
               </div>
           </div>
+            <Link to="/"><button className="alert-link">Back</button></Link>
         </div>
     );
 };
