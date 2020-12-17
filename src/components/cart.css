@@ -1,0 +1,29 @@
+.cart-img {
+    max-width: 50px;
+    object-fit: contain;
+}
+
+.cart-table {
+    width: 100%;
+}
+
+.cart-table td,
+.cart-table th {
+    padding: 20px;
+}
+
+.cart-table th {
+    background: #eeeeee;
+    color: #0e0c0c;
+}
+.total{
+    text-align: right;
+}
+.product-link-color{
+    color: black;
+}
+.cart-image-details{
+    max-width: 200px;
+
+}
+

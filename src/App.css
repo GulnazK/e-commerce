@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+}
+body{
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.flex-parent{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-3{
+  width: 25%;
+  padding: 0 15px;
+}
+img{
+  max-width: 100%;
+}
+.cart img{
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+table, td,th,tr{
+  border: 1px solid black;
+}
+.col-6{
+  width: 50%;
+  padding: 0 15px;
+}
+.col-7{
+  width: 58.333%;
+  padding: 0 15px;
+}
+.col-5{
+  width: 41.666%;
+  padding: 0 15px;
+}
+.alert-link{
+  color:white;
+  padding: 5px 15px;
+  border: 1px solid #dd4308;
+  margin-right: 10px;
+  background: #dd4308;
+}
+.alert-link:hover{
+  background: #e38863;
+}
+.alert-secondary {
+  color: #41464b;
+  background-color: #e2e3e5;
+  border-color: #d3d6d8;
+}
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+.select-option{
+  margin-bottom: 5px;
+  background: #dd4308;
+  color:white;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.product-title{
+  height: 25px;
+}
+.rating{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.product{
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width: 775px) {
+  .cart-buttons button{
+    padding: 5px 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .product img {
+    height: 150px;
+  }
+  .product-title{
+    font-size: 16px;
+    height: 35px;
+  }
+}
+
+
+@media (max-width: 770px) {
+  .cart-buttons button{
+    /*padding: 5px 20px;*/
+  }
+  .product img {
+    height: 170px;
+  }
+  .product-title{
+    font-size: 16px;
+  }
+  .col-3{
+    width: 50%;
+  }
+}
+@media (max-width: 415px){
+  .col-3{
+    width: 100%;
+  }
+  .col-5{
+    width: 100%;
+  }
+  .col-7{
+    width: 100%;
   }
 }
